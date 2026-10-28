@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-research-agent"
+version = "0.1.0"
+description = "Production-quality Autonomous Research AI Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "langchain-core",
+    "langchain-google-genai",
+    "streamlit",
+    "pydantic",
+    "reportlab",
+    "python-dotenv",
+    "httpx",
+    "tavily-python",
+    "markdown",
+    "beautifulsoup4"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-mock"
+]
